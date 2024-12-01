@@ -61,6 +61,10 @@ git clone https://github.com/username/form-web.git
       pip3 install flask gunicorn
       ```
    3. Create a systemd service file for the backend:
+      - Create service file:
+        ```bash
+        sudo nano /etc/systemd/system/app.service
+        ```
       - Paste the following:
         ```bash
         [Unit]
@@ -77,12 +81,12 @@ git clone https://github.com/username/form-web.git
         [Install]
         WantedBy=multi-user.target
         ```
-   4. Start and enable the backend service:
+   5. Start and enable the backend service:
       ```bash
       sudo systemctl start app
       sudo systemctl enable app
       ```
-4. Build and deploy the frontend:
+5. Build and deploy the frontend:
    1. Build the React frontend:
       ```bash
       cd frontend
@@ -92,7 +96,7 @@ git clone https://github.com/username/form-web.git
       ```bash
       sudo cp -r build/* /var/www/html/
       ```
-5. Configure Nginx:
+6. Configure Nginx:
    1. Create a new Nginx configuration file:
       ```bash
       sudo nano /etc/nginx/sites-available/app
