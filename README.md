@@ -101,7 +101,7 @@ git clone https://github.com/username/form-web.git
       ```bash
       server {
           listen 80;
-          server_name 103.49.238.161;
+          server_name your-ip-or-domain;
 
           root /var/www/html;
           index index.html index.htm;
