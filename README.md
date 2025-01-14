@@ -32,11 +32,11 @@ npm start
 ```
 
 ## Deployment Setup Instructions (VPS)
-# Prerequisites
+### Prerequisites
 - Ensure you have a VPS and a domain or public IP address.
 - Install Python, Node.js, and Nginx.
 
-# Steps
+### Steps
 1. Clone the repository:
 ```bash
 git clone https://github.com/username/form-web.git
